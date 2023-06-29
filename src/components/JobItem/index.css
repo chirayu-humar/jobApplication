@@ -1,0 +1,34 @@
+.outerItem {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #2c364c;
+  padding: 20px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.firstItemDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.companyImgContainer {
+  width: 50px;
+}
+.logo {
+  width: 100%;
+}
+.secondItemDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.secondInner {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  justify-content: space-between;
+}

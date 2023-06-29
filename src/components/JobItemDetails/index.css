@@ -1,0 +1,104 @@
+.jobDetailsBackground {
+  min-height: 100vh;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #000000;
+}
+.bottomContainerJobItemDetails {
+  display: flex;
+  width: auto;
+  flex-grow: 1;
+  padding: 40px;
+}
+.innerJobItemDetailContainer {
+  width: auto;
+  display: flex;
+  min-height: 100%;
+  flex-grow: 1;
+  background-color: #202020;
+  border-radius: 30px;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+}
+.special1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.special2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.companyLogoContainer {
+  width: 60px;
+  margin-right: 30px;
+}
+.logoContainer {
+  width: 100%;
+}
+.special2inner {
+  width: 200px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+.special3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+}
+.special3inner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.special4 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: blueviolet;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+.starList {
+  width: 100%;
+}
+.special5 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: blueviolet;
+}
+.special5inner1 {
+  width: 100%;
+}
+.spacial5inner2 {
+  display: flex;
+  flex-direction: row;
+}
+.temp1 {
+  min-width: 60%;
+}
+.temp2 {
+  flex-grow: 1;
+}
+.special6inner1 {
+  width: 100%;
+}
+.special6inner2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

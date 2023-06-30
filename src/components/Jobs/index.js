@@ -19,6 +19,7 @@ class Jobs extends Component {
     isLoading: false,
     isProfileReqSuccess: true,
     isJobReqSuccess: true,
+    isProfileLoading: false,
   }
 
   componentDidMount() {
@@ -28,7 +29,8 @@ class Jobs extends Component {
 
   fetchProfileDetails = async () => {
     this.setState({
-      isProfileReqSuccess: true,
+      isProfileReqSuccess: false,
+      isProfileLoading: true,
     })
     const url = 'https://apis.ccbp.in/profile'
     const jwtToken = Cookies.get('jwt_token')
@@ -50,10 +52,13 @@ class Jobs extends Component {
       }
       this.setState({
         profileDetails: updatedData,
+        isProfileLoading: false,
+        isProfileReqSuccess: true,
       })
     } else {
       this.setState({
         isProfileReqSuccess: false,
+        isProfileLoading: false,
       })
     }
   }
@@ -190,6 +195,7 @@ class Jobs extends Component {
       isLoading,
       isJobReqSuccess,
       isProfileReqSuccess,
+      isProfileLoading,
     } = this.state
     return (
       <ThemeContext.Consumer>
@@ -206,6 +212,16 @@ class Jobs extends Component {
                       <img alt="profile" src={profileDetails.profileImageUrl} />
                       <h1>{profileDetails.name}</h1>
                       <p>{profileDetails.shortBio}</p>
+                    </div>
+                  )}
+                  {isProfileLoading && (
+                    <div className="loader-container" data-testid="loader">
+                      <Loader
+                        type="ThreeDots"
+                        color="#ffffff"
+                        height="50"
+                        width="50"
+                      />
                     </div>
                   )}
                   {!isProfileReqSuccess && (

@@ -119,7 +119,7 @@ class JobItemDetails extends Component {
                   />
                 </div>
                 <div>
-                  <p>{jobDetails.title}</p>
+                  <h1>{jobDetails.title}</h1>
                   <p>{jobDetails.rating}</p>
                 </div>
               </div>
